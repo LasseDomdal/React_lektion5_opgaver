@@ -1,0 +1,7 @@
+.Header {
+    top: 0;
+    position: fixed;
+    text-align: center;
+    /*background-color: coral;*/
+    width: 100%;
+}
