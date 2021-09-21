@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Footer from './components/footer/Footer.js'
 import Header from "./components/Header/Header";
@@ -13,15 +12,13 @@ function App() {
     <div className="App">
       <Header/>
 
-        <div>
+        <div className="routes">
             <Switch>
-                <Route path="/" ><FrontPage/></Route>
+                <Route exact path="/" ><FrontPage/></Route>
                 <Route path="/login" ><Login/></Route>
                 <Route path="/signup" ><Signup/></Route>
-                <Route path="/abort" ><About/></Route>
+                <Route path="/about" ><About/></Route>
 
-                {/*<Route path="/" render={() => <FrontPage />}></Route>*/}
-                {/*<Route path="/" ><FrontPage/></Route>*/}
 
             </Switch>
         </div>
